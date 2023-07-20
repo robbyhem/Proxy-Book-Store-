@@ -1,0 +1,4 @@
+ProxyWeb/bin/*
+ProxyWeb/obj/*
+ProxyWeb/*.json
+.vs/*

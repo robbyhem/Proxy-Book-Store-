@@ -1,0 +1,12 @@
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\bin\Debug\net7.0\ProxyWeb.Models.deps.json
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\bin\Debug\net7.0\ProxyWeb.Models.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\bin\Debug\net7.0\ProxyWeb.Models.pdb
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ProxyWeb.Models.csproj.AssemblyReference.cache
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ProxyWeb.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ProxyWeb.Models.AssemblyInfoInputs.cache
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ProxyWeb.Models.AssemblyInfo.cs
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ProxyWeb.Models.csproj.CoreCompileInputs.cache
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ProxyWeb.Models.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\refint\ProxyWeb.Models.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ProxyWeb.Models.pdb
+C:\Users\B\source\repos\Proxy\ProxyWeb.Models\obj\Debug\net7.0\ref\ProxyWeb.Models.dll

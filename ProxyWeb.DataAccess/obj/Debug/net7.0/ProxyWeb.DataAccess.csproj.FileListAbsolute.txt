@@ -1,0 +1,17 @@
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.csproj.AssemblyReference.cache
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.AssemblyInfoInputs.cache
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.AssemblyInfo.cs
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.DataAccess.deps.json
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.DataAccess.runtimeconfig.json
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.DataAccess.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.DataAccess.pdb
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.Models.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.Models.pdb
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.csproj.CopyComplete
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\refint\ProxyWeb.DataAccess.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.pdb
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.genruntimeconfig.cache
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ref\ProxyWeb.DataAccess.dll
