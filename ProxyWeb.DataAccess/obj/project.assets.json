@@ -1133,6 +1133,16 @@
           }
         }
       },
+      "ProxyWeb.External/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ProxyWeb.External.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProxyWeb.External.dll": {}
+        }
+      },
       "ProxyWeb.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3463,6 +3473,11 @@
         "version.txt"
       ]
     },
+    "ProxyWeb.External/1.0.0": {
+      "type": "project",
+      "path": "../ProxyWeb.External/ProxyWeb.External.csproj",
+      "msbuildProject": "../ProxyWeb.External/ProxyWeb.External.csproj"
+    },
     "ProxyWeb.Models/1.0.0": {
       "type": "project",
       "path": "../ProxyWeb.Models/ProxyWeb.Models.csproj",
@@ -3474,6 +3489,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
+      "ProxyWeb.External >= 1.0.0",
       "ProxyWeb.Models >= 1.0.0"
     ]
   },
@@ -3510,6 +3526,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\B\\source\\repos\\Proxy\\ProxyWeb.External\\ProxyWeb.External.csproj": {
+              "projectPath": "C:\\Users\\B\\source\\repos\\Proxy\\ProxyWeb.External\\ProxyWeb.External.csproj"
+            },
             "C:\\Users\\B\\source\\repos\\Proxy\\ProxyWeb.Models\\ProxyWeb.Models.csproj": {
               "projectPath": "C:\\Users\\B\\source\\repos\\Proxy\\ProxyWeb.Models\\ProxyWeb.Models.csproj"
             }

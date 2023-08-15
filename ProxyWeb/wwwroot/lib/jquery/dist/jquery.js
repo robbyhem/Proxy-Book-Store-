@@ -10757,10 +10757,10 @@ var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
 
 // Bind a function to a context, optionally partially applying any
 // arguments.
-// jQuery.proxy is deprecated to promote standards (specifically Function#bind)
+// jQuery.ProxyBook is deprecated to promote standards (specifically Function#bind)
 // However, it is not slated for removal any time soon
-jQuery.proxy = function( fn, context ) {
-	var tmp, args, proxy;
+jQuery.ProxyBook = function( fn, context ) {
+	var tmp, args, ProxyBook;
 
 	if ( typeof context === "string" ) {
 		tmp = fn[ context ];
@@ -10776,14 +10776,14 @@ jQuery.proxy = function( fn, context ) {
 
 	// Simulated bind
 	args = slice.call( arguments, 2 );
-	proxy = function() {
+	ProxyBook = function() {
 		return fn.apply( context || this, args.concat( slice.call( arguments ) ) );
 	};
 
 	// Set the guid of unique handler to the same of original handler, so it can be removed
-	proxy.guid = fn.guid = fn.guid || jQuery.guid++;
+	ProxyBook.guid = fn.guid = fn.guid || jQuery.guid++;
 
-	return proxy;
+	return ProxyBook;
 };
 
 jQuery.holdReady = function( hold ) {

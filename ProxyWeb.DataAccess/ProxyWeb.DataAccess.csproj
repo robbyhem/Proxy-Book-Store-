@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProxyWeb.External\ProxyWeb.External.csproj" />
     <ProjectReference Include="..\ProxyWeb.Models\ProxyWeb.Models.csproj" />
   </ItemGroup>
 

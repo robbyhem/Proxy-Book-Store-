@@ -127,7 +127,7 @@
     function validationInfo(form) {
         var $form = $(form),
             result = $form.data(data_validation),
-            onResetProxy = $.proxy(onReset, form),
+            onResetProxyBook = $.ProxyBook(onReset, form),
             defaultOptions = $jQval.unobtrusive.options || {},
             execInContext = function (name, args) {
                 var func = defaultOptions[name];
@@ -156,8 +156,8 @@
                 },
                 attachValidation: function () {
                     $form
-                        .off("reset." + data_validation, onResetProxy)
-                        .on("reset." + data_validation, onResetProxy)
+                        .off("reset." + data_validation, onResetProxyBook)
+                        .on("reset." + data_validation, onResetProxyBook)
                         .validate(this.options);
                 },
                 validate: function () {  // a validation function that is called by unobtrusive Ajax

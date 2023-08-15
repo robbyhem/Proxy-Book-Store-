@@ -1,11 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using ProxyWeb.DataAccess.Data;
+using ProxyWeb.DataAccess.Repository;
+using ProxyWeb.DataAccess.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

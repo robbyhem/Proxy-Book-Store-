@@ -1582,7 +1582,7 @@ if ( $.ajaxPrefilter ) {
 	} );
 } else {
 
-	// Proxy ajax
+	// ProxyBook ajax
 	ajax = $.ajax;
 	$.ajax = function( settings ) {
 		var mode = ( "mode" in settings ? settings : $.ajaxSettings ).mode,

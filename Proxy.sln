@@ -5,11 +5,11 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyWeb", "ProxyWeb\ProxyWeb.csproj", "{BBA61487-E428-40D3-81B1-18DB1EC8B008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyWeb.DataAccess", "ProxyWeb.DataAccess\ProxyWeb.DataAccess.csproj", "{AB44DA3A-E8F5-4A0B-93C0-F4841F7CF777}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyWeb.DataAccess", "ProxyWeb.DataAccess\ProxyWeb.DataAccess.csproj", "{AB44DA3A-E8F5-4A0B-93C0-F4841F7CF777}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyWeb.Models", "ProxyWeb.Models\ProxyWeb.Models.csproj", "{33516CBA-1229-4157-AFB0-90163F605321}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyWeb.Models", "ProxyWeb.Models\ProxyWeb.Models.csproj", "{33516CBA-1229-4157-AFB0-90163F605321}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyWeb.External", "ProxyWeb.External\ProxyWeb.External.csproj", "{4906CE90-78F1-4981-92C7-F41BF22264F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyWeb.External", "ProxyWeb.External\ProxyWeb.External.csproj", "{4906CE90-78F1-4981-92C7-F41BF22264F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

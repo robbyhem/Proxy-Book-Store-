@@ -15,3 +15,5 @@ C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\refint\ProxyW
 C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.pdb
 C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ProxyWeb.DataAccess.genruntimeconfig.cache
 C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\obj\Debug\net7.0\ref\ProxyWeb.DataAccess.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.External.dll
+C:\Users\B\source\repos\Proxy\ProxyWeb.DataAccess\bin\Debug\net7.0\ProxyWeb.External.pdb
