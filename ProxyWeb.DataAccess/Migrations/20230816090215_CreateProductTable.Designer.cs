@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProxyWeb.DataAccess.Data;
 
@@ -10,9 +11,11 @@ using ProxyWeb.DataAccess.Data;
 namespace ProxyWeb.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230816090215_CreateProductTable")]
+    partial class CreateProductTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -101,56 +104,6 @@ namespace ProxyWeb.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Author = "Billy Spark",
-                            Description = "Praesent vitae sodales libero",
-                            ISBN = "SW999999001",
-                            Price = 90.0,
-                            Price100 = 80.0,
-                            Price50 = 85.0,
-                            PriceList = 99.0,
-                            Title = "Fortune of Time"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Author = "Abby Muscles",
-                            Description = "Praesent vitae sodales libero",
-                            ISBN = "WS33333301",
-                            Price = 30.0,
-                            Price100 = 20.0,
-                            Price50 = 25.0,
-                            PriceList = 40.0,
-                            Title = "Cotton Candy"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Author = "Nancy Hoover",
-                            Description = "Praesent vitae sodales libero",
-                            ISBN = "CAW777777701",
-                            Price = 30.0,
-                            Price100 = 30.0,
-                            Price50 = 30.0,
-                            PriceList = 30.0,
-                            Title = "Dark Skies"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Author = "Julian Button",
-                            Description = "Praesent vitae sodales libero",
-                            ISBN = "RIT055555501",
-                            Price = 50.0,
-                            Price100 = 35.0,
-                            Price50 = 40.0,
-                            PriceList = 55.0,
-                            Title = "Vanish in the Sunset"
-                        });
                 });
 #pragma warning restore 612, 618
         }

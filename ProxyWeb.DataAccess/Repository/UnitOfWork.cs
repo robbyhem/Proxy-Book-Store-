@@ -13,11 +13,14 @@ namespace ProxyWeb.DataAccess.Repository
     {
         private ApplicationDbContext _context;
         public IRepoCategory Category { get; private set; }
+        public IRepoProduct Product { get; private set; }
 
         public UnitOfWork(ApplicationDbContext context)
         {
             _context= context;
             Category = new RepoCategory(_context);
+            Product = new RepoProduct(_context);
+
         }
         public void Save()
         {

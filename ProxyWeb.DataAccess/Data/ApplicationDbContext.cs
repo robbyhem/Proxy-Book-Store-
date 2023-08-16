@@ -11,6 +11,7 @@ namespace ProxyWeb.DataAccess.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -18,6 +19,60 @@ namespace ProxyWeb.DataAccess.Data
                new Category { Id = 1, Name = "Action", DisplayOrder = 1 },
                new Category { Id = 2, Name = "Sci-Fi", DisplayOrder = 2 },
                new Category { Id = 3, Name = "History", DisplayOrder = 3 }
+                );
+
+            modelBuilder.Entity<Product>().HasData(
+                new Product
+                {
+                    Id = 1,
+                    Title = "Fortune of Time",
+                    Author = "Billy Spark",
+                    Description = "Praesent vitae sodales libero",
+                    ISBN = "SW999999001",
+                    PriceList = 99,
+                    Price = 90,
+                    Price50= 85,
+                    Price100= 80,
+                },
+                
+                new Product
+                {
+                    Id = 2,
+                    Title = "Cotton Candy",
+                    Author = "Abby Muscles",
+                    Description = "Praesent vitae sodales libero",
+                    ISBN = "WS33333301",
+                    PriceList = 40,
+                    Price = 30,
+                    Price50= 25,
+                    Price100= 20,
+                },
+                
+                new Product
+                {
+                    Id = 3,
+                    Title = "Dark Skies",
+                    Author = "Nancy Hoover",
+                    Description = "Praesent vitae sodales libero",
+                    ISBN = "CAW777777701",
+                    PriceList = 30,
+                    Price = 30,
+                    Price50= 30,
+                    Price100= 30,
+                },
+                
+                new Product
+                {
+                    Id = 4,
+                    Title = "Vanish in the Sunset",
+                    Author = "Julian Button",
+                    Description = "Praesent vitae sodales libero",
+                    ISBN = "RIT055555501",
+                    PriceList = 55,
+                    Price = 50,
+                    Price50= 40,
+                    Price100= 35,
+                }
                 );
         }
     }
