@@ -20,4 +20,8 @@
     <ProjectReference Include="..\ProxyWeb.DataAccess\ProxyWeb.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

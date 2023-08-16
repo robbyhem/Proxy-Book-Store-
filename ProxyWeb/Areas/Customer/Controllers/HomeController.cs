@@ -2,8 +2,9 @@
 using ProxyWeb.Models;
 using System.Diagnostics;
 
-namespace ProxyWeb.Controllers
+namespace ProxyWeb.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
