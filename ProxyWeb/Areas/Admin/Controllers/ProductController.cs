@@ -1,23 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProxyWeb.DataAccess.Data;
 using ProxyWeb.DataAccess.Repository.IRepository;
 using ProxyWeb.Models;
 
-namespace ProxyWeb.Areas.Admin.Controllers
+namespace ProxyWeb.Controllers
 {
     [Area("Admin")]
-    public class CategoryController : Controller
+    public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryController(IUnitOfWork unitOfWork)
+        public ProductController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            List<Category> objList = _unitOfWork.Category.GetAll().ToList();
+            List<Product> objList = _unitOfWork.Product.GetAll().ToList();
             return View(objList);
         }
 
@@ -26,24 +25,18 @@ namespace ProxyWeb.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Category category)
+        public IActionResult Create(Product product)
         {
-            if (category.Name != category.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("name", "The Display Order doesn't match");
-            }
-
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Create(category);
+                _unitOfWork.Product.Create(product);
                 _unitOfWork.Save();
-                TempData["success"] = "Category created successfully";
+                TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
             return View();
         }
 
-        //[Route("Category/{id:int}")]
         public IActionResult Edit(int? id)
         {
             if (id is null || id is 0)
@@ -51,23 +44,21 @@ namespace ProxyWeb.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            Category? category = _unitOfWork.Category.Get(x => x.Id == id);
-            //Category? category1 = _context.Categories.FirstOrDefault(c => c.Id == id);
-            //Category? category2 = _context.Categories.Where(c => c.Id == id).FirstOrDefault();
-            if (category is null)
+            Product? product = _unitOfWork.Product.Get(x => x.Id == id);
+            if (product is null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(product);
         }
         [HttpPost]
-        public IActionResult Edit(Category category)
+        public IActionResult Edit(Product product)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Update(category);
+                _unitOfWork.Product.Update(product);
                 _unitOfWork.Save();
-                TempData["success"] = "Category updated successfully";
+                TempData["success"] = "Product updated successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -80,23 +71,23 @@ namespace ProxyWeb.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            Category? category = _unitOfWork.Category.Get(x => x.Id == id);
-            if (category is null)
+            Product? product = _unitOfWork.Product.Get(x => x.Id == id);
+            if (product is null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(product);
         }
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePost(int? id)
         {
-            Category? category = _unitOfWork.Category.Get(x => x.Id == id);
+            Product? product = _unitOfWork.Product.Get(x => x.Id == id);
 
-            if (category is null)
+            if (product is null)
             {
                 return NotFound();
             }
-            _unitOfWork.Category.Delete(category);
+            _unitOfWork.Product.Delete(product);
             _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");

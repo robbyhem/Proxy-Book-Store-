@@ -9,6 +9,7 @@ namespace ProxyWeb.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         IRepoCategory Category { get; }
+        IRepoProduct Product { get; }
         
         void Save();
     }
