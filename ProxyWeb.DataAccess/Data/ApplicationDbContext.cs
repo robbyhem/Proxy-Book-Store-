@@ -33,6 +33,8 @@ namespace ProxyWeb.DataAccess.Data
                     Price = 90,
                     Price50= 85,
                     Price100= 80,
+                    CategoryId = 2,
+                    ImageUrl = ""
                 },
                 
                 new Product
@@ -46,6 +48,8 @@ namespace ProxyWeb.DataAccess.Data
                     Price = 30,
                     Price50= 25,
                     Price100= 20,
+                    CategoryId = 3,
+                    ImageUrl = ""
                 },
                 
                 new Product
@@ -59,6 +63,9 @@ namespace ProxyWeb.DataAccess.Data
                     Price = 30,
                     Price50= 30,
                     Price100= 30,
+                    CategoryId = 1,
+                    ImageUrl = ""
+
                 },
                 
                 new Product
@@ -72,6 +79,9 @@ namespace ProxyWeb.DataAccess.Data
                     Price = 50,
                     Price50= 40,
                     Price100= 35,
+                    CategoryId = 2,
+                    ImageUrl = ""
+
                 }
                 );
         }

@@ -28,10 +28,10 @@ namespace ProxyWeb.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Category category)
         {
-            if (category.Name != category.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("name", "The Display Order doesn't match");
-            }
+            //if (category.Name != category.DisplayOrder.ToString())
+            //{
+            //    ModelState.AddModelError("name", "The Display Order doesn't match");
+            //}
 
             if (ModelState.IsValid)
             {

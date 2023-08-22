@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ProxyWeb.DataAccess.Repository.IRepository;
 using ProxyWeb.Models;
+using ProxyWeb.Models.ViewModels;
 
 namespace ProxyWeb.Controllers
 {
@@ -20,21 +22,42 @@ namespace ProxyWeb.Controllers
             return View(objList);
         }
 
+        // "@(ViewData["CategoryList_Key"] as IEnumerable<SelectListItem>)"
         public IActionResult Create()
         {
-            return View();
+            //ViewBag.CategoryList_Key = CategoryList;
+            //ViewData["CategoryList_Key"] = CategoryList;
+            ProductVM productVM = new()
+            {
+                CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Product = new Product()
+            };
+
+            return View(productVM);
         }
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult Create(ProductVM product)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Product.Create(product);
+                _unitOfWork.Product.Create(product.Product);
                 _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+                product.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+            }
+            return View(product);
         }
 
         public IActionResult Edit(int? id)
